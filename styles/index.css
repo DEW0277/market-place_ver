@@ -1,0 +1,56 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  padding: 20px 50px 20px 50px;
+  background-color: rgb(43, 43, 43);
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar_menu .navbar_menu_list a,
+.navbar_signup_btn p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar_signup_btn {
+  display: flex;
+  width: 152px;
+  height: 60px;
+  gap: 12px;
+  justify-content: center;
+  background-color: rgb(162, 89, 255);
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid rgb(162, 89, 255);
+}
+
+.navbar_signup_btn:hover {
+  background-color: #fff;
+}
+
+.navbar_signup_btn:hover p {
+  color: rgb(162, 89, 255);
+}
