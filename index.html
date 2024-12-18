@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT Marketplace</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
@@ -16,18 +24,356 @@
           </a>
         </div>
 
-        <ul class="navbar_menu">
+        <ul id="menu" class="navbar_menu">
           <li class="navbar_menu_list"><a href="#">Marketplace</a></li>
           <li class="navbar_menu_list"><a href="#">Rankings</a></li>
           <li class="navbar_menu_list"><a href="#">Connect a wallet</a></li>
           <li class="navbar_menu_list">
             <button class="navbar_signup_btn">
-              <img src="./assets/images/User.png" alt="user-image" />
+              <i class="fa-regular fa-user"></i>
               <p>Sign Up</p>
             </button>
           </li>
         </ul>
+
+        <div class="media" id="media_btn">
+          <div class="media_bars" id="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="media_xmark" id="xmark">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <section class="showcase">
+      <div class="about_info">
+        <h1>
+          Discover <br />
+          digital art & <br />
+          Collect NFTs
+        </h1>
+        <p class="showcase_text">
+          NFT marketplace UI created with Anima for <br />
+          Figma. Collect, buy and sell art from more <br />
+          than 20k NFT artists.
+        </p>
+        <button class="navbar_signup_btn btns_showcase">
+          <i class="fa-solid fa-rocket"></i>
+          <p>Get Started</p>
+        </button>
+
+        <div class="statistika">
+          <div>
+            <h2>240k+</h2>
+            <p>Total Sale</p>
+          </div>
+          <div>
+            <h2>100k+</h2>
+            <p>Auctions</p>
+          </div>
+          <div>
+            <h2>240k+</h2>
+            <p>Artists</p>
+          </div>
+        </div>
+      </div>
+      <div class="about_card">
+        <div class="card">
+          <div class="card_image">
+            <img
+              src="./assets/images/Image Placeholder.jpeg"
+              alt="image-placeholder"
+            />
+          </div>
+          <div class="card_about__footer">
+            <h3 class="card_title">Space Walking</h3>
+            <div class="user_account">
+              <img src="./assets/images/Avatar Placeholder.png" alt="" />
+              <p>Dish Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trading_collection">
+      <div class="trading_title">
+        <h2>Trending Collection</h2>
+        <p>Checkout our weekly updated trending collection.</p>
+      </div>
+      <div class="trading_cards">
+        <div class="card">
+          <div class="card_top">
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="card-image"
+            />
+          </div>
+          <div class="card_bottom">
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="trading-image"
+            />
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="trading-image"
+            />
+            <div class="image_more">1025+</div>
+          </div>
+          <div class="trading_card_footer">
+            <h3 class="card_title">Space Walking</h3>
+            <div class="user_account">
+              <img src="./assets/images/Avatar Placeholder.png" alt="" />
+              <p>Dish Studio</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_top">
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="card-image"
+            />
+          </div>
+          <div class="card_bottom">
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="trading-image"
+            />
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="trading-image"
+            />
+            <div class="image_more">1025+</div>
+          </div>
+          <div class="trading_card_footer">
+            <h3 class="card_title">Space Walking</h3>
+            <div class="user_account">
+              <img src="./assets/images/Avatar Placeholder.png" alt="" />
+              <p>Dish Studio</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_top">
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="card-image"
+            />
+          </div>
+          <div class="card_bottom">
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="trading-image"
+            />
+            <img
+              src="./assets/images/Primary Photo Placeholder.jpeg"
+              alt="trading-image"
+            />
+            <div class="image_more">1025+</div>
+          </div>
+          <div class="trading_card_footer">
+            <h3 class="card_title">Space Walking</h3>
+            <div class="user_account">
+              <img src="./assets/images/Avatar Placeholder.png" alt="" />
+              <p>Dish Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="creators">
+      <div class="crators_title">
+        <div>
+          <span>Top creators</span>
+          <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+        </div>
+
+        <button>
+          <i class="fa-solid fa-rocket"></i>
+          <span>View Rankings</span>
+        </button>
+      </div>
+
+      <div class="creators_cards">
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="creators_cards">
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="creators_cards">
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+        <div class="creator_card">
+          <div class="card_header">
+            <div class="creator_number">1</div>
+            <img
+              src="./assets/images/Avatar Placeholder.png"
+              alt="avatar_image"
+            />
+          </div>
+
+          <div class="card_body">
+            <h3>Keepitreal</h3>
+            <p>Total Sales: <span>34.53 ETH</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
